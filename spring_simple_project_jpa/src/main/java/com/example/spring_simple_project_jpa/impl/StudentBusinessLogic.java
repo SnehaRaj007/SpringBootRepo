@@ -19,13 +19,13 @@ public class StudentBusinessLogic {
 	
 	{
 		
-		List<Student> a=studentService.findAll();
-		if(a.isEmpty())
+		List<Student> students=studentService.findAll();
+		if(students.isEmpty())
 		{
 			throw new StudentNotFoundException("Resource Not Found");
 		}
-		System.out.println(a);
-		return a;
+		System.out.println(students);
+		return students;
 
 }
 }
